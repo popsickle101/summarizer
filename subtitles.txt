@@ -1,0 +1,216 @@
+summarize this youtube videoTime: 0.96s - Text: yo friends what's up so SW the other day
+Time: 3.08s - Text: released a new amazing feature which is
+Time: 5.16s - Text: error boundaries and basically the tldr
+Time: 7.72s - Text: is when a part of your app shits itself
+Time: 9.8s - Text: it doesn't have to take the entire thing
+Time: 11.44s - Text: down so it can provide a fallback for
+Time: 13.12s - Text: example and this is actually a part of
+Time: 15s - Text: Advent of SW so this year instead of
+Time: 16.72s - Text: having challenges the swell team is
+Time: 18.48s - Text: releasing a new feature until Christmas
+Time: 20.88s - Text: so far we got error boundaries on day
+Time: 22.96s - Text: one day two We Got Each without s so you
+Time: 25.199s - Text: can iterate over items no problem and
+Time: 27.519s - Text: then now you can also export Snippets
+Time: 29.48s - Text: and don't worry if you're not following
+Time: 30.8s - Text: this I'm going to give you a full report
+Time: 32.559s - Text: once the Advent of SW is over and
+Time: 34.719s - Text: another awesome thing you can
+Time: 35.64s - Text: participate in is last year's Advent of
+Time: 37.76s - Text: SW challenges which are really awesome
+Time: 40.2s - Text: so here is a bunch of challenges you
+Time: 41.84s - Text: could try this year using runes right so
+Time: 44.44s - Text: it's going to be really fun I think you
+Time: 46.16s - Text: have 24 challenges which is really
+Time: 48.16s - Text: awesome these are beautifully
+Time: 49.719s - Text: well-crafted challenges that you can try
+Time: 51.8s - Text: to challenge yourself so you can do that
+Time: 53.84s - Text: if you want but basically if you're
+Time: 56.359s - Text: familiar with swel kit I released a
+Time: 58.239s - Text: video a while ago on SW routing and
+Time: 60.64s - Text: basically swel kit had this feature kind
+Time: 62.48s - Text: of for rout so for example if you have
+Time: 64.08s - Text: the sidebar header and the block section
+Time: 66.52s - Text: if the block section explodes for
+Time: 67.88s - Text: example it's not going to take your
+Time: 69.4s - Text: entire app down so swel kit already has
+Time: 71.68s - Text: this concept and that is the beauty of
+Time: 73.439s - Text: nested routes so when a nested route in
+Time: 75.6s - Text: swel kit shits itself it doesn't have to
+Time: 77.439s - Text: take the entire thing down and now you
+Time: 79.439s - Text: can take this concept and apply to
+Time: 81.159s - Text: components and this feature is more
+Time: 83.04s - Text: impactful than you think because now
+Time: 84.68s - Text: that you have error boundaries now you
+Time: 86.52s - Text: can have things in swell like suspense
+Time: 88.759s - Text: acing data loading and and Etc so you
+Time: 91.04s - Text: can expect some great things from SW in
+Time: 93.2s - Text: the near future all right but enough
+Time: 95s - Text: yapping let's get into error boundaries
+Time: 97.479s - Text: but first here's a message from our
+Time: 98.92s - Text: sponsor I'd like to thank this video
+Time: 100.96s - Text: sponsor you the viewer you can support
+Time: 103.24s - Text: the channel through patreon or a YouTube
+Time: 105.2s - Text: channel membership members get early
+Time: 107.36s - Text: access to videos help shape the content
+Time: 109.439s - Text: and a special Discord role you can find
+Time: 111.88s - Text: all of the links in the description
+Time: 113.6s - Text: thank you for your
+Time: 114.84s - Text: support all right here I have a simple
+Time: 116.96s - Text: mouse coordinates component and we're
+Time: 118.84s - Text: just tracking the coordinates of the
+Time: 120.2s - Text: mouse but let's say for example that on
+Time: 121.96s - Text: accident this mouse value gets set to
+Time: 124s - Text: zero so now when we try to assign the x
+Time: 126.32s - Text: or y value is going to throw an error
+Time: 128.759s - Text: any side of plus page s is where I'm
+Time: 131.039s - Text: importing the mouse coordinates
+Time: 132.36s - Text: component so let's look at our app as we
+Time: 134.48s - Text: can see it works as expected and now
+Time: 136.36s - Text: when we click on this button it's going
+Time: 138.12s - Text: to throw an error and as we can see now
+Time: 140.4s - Text: our app itself and we can do
+Time: 142.36s - Text: anything right we can click on this
+Time: 143.959s - Text: however much we want the only course of
+Time: 145.76s - Text: action left to us is to reload this page
+Time: 148.4s - Text: but thankfully we can use a boundaries
+Time: 151.16s - Text: so we want to catch the error right the
+Time: 154.8s - Text: first thing that we can do we can just
+Time: 156.2s - Text: say swell boundary and we can place the
+Time: 160.159s - Text: component that we want to catch any
+Time: 161.56s - Text: errors of inside of here all right so
+Time: 163.519s - Text: now we can save this but we're going to
+Time: 164.72s - Text: see nothing is going to happen so
+Time: 166.76s - Text: everything works but now we go boom and
+Time: 168.72s - Text: we're going to see we're not going to
+Time: 170.519s - Text: catch anything and the reason for this
+Time: 172.519s - Text: is that you have to pass one of these
+Time: 174.04s - Text: two things to swell boundary for it to
+Time: 176.159s - Text: work you either have to pass an on error
+Time: 178.44s - Text: or failed function so so for example we
+Time: 180.48s - Text: can say on error so what do you want to
+Time: 182.72s - Text: happen when you catch the error so you
+Time: 184.239s - Text: can now get the error you can send it to
+Time: 185.959s - Text: whatever you want some service or
+Time: 187.72s - Text: whatever as they say in the docs and we
+Time: 189.56s - Text: can even make this even shorter we can
+Time: 191.12s - Text: just say console log and now we're going
+Time: 193.72s - Text: to see let's refresh the page and now
+Time: 196s - Text: when we go boom we're actually going to
+Time: 198s - Text: catch the error and by default what
+Time: 199.76s - Text: happens is the content gets replaced by
+Time: 201.599s - Text: nothing so the next thing we can do is
+Time: 203.519s - Text: actually provide a fallback and we can
+Time: 205.28s - Text: do that using a snippet so I can go here
+Time: 207.799s - Text: and I have a snippet for my snippet so
+Time: 209.879s - Text: we can say
+Time: 213.72s - Text: failed so now we can go here and we can
+Time: 216.12s - Text: pass this snippet here as an argument
+Time: 218.799s - Text: refresh let's go boom and now we're
+Time: 221.159s - Text: going to see we get a fallback but of
+Time: 223.48s - Text: course we don't have to do this we can
+Time: 224.92s - Text: just use a snippet inside of here and
+Time: 227.28s - Text: now it's going to become a prop so you
+Time: 228.959s - Text: don't have to do this anymore but wait
+Time: 231.239s - Text: there's more you can also get the error
+Time: 234.28s - Text: from fail so now we can for example say
+Time: 237.04s - Text: error do message let's go back back here
+Time: 240.56s - Text: so now when everything goes boom you're
+Time: 242.56s - Text: going to get the error here and another
+Time: 244.799s - Text: thing you can do is you can use a reset
+Time: 247s - Text: function given by the failed function so
+Time: 249.28s - Text: you can for example take reset let's
+Time: 251.879s - Text: create a
+Time: 253.12s - Text: button I can say reset and then let's
+Time: 256.079s - Text: just say on click reset thank you all
+Time: 258.28s - Text: right so now if I save this you're going
+Time: 259.88s - Text: to actually see let me just refresh for
+Time: 262.12s - Text: good measure now when it goes boom and
+Time: 264.16s - Text: when I click reset SW is actually going
+Time: 266.12s - Text: to recreate the content and now you can
+Time: 268.6s - Text: see everything works the same as before
+Time: 271.08s - Text: and if you're using typescript to type
+Time: 272.639s - Text: this as we can see for the types you go
+Time: 274.479s - Text: back here to failed we can see this is a
+Time: 276.479s - Text: snippet so error is unnown and reset is
+Time: 278.96s - Text: just a function so I don't think there
+Time: 280.479s - Text: is really any type that you can import
+Time: 282.4s - Text: but you can just type it like this so
+Time: 284.4s - Text: this can be a void and a problem with
+Time: 286.28s - Text: this if we say unknown it's still going
+Time: 288.16s - Text: to complain so you can just use any and
+Time: 290.4s - Text: what's also interesting let's just conso
+Time: 293.56s - Text: dur error and I'm also going to remove
+Time: 297s - Text: this on error CU it's annoying me all
+Time: 299.479s - Text: right so now I'm going to reload this
+Time: 301.32s - Text: let's go boom and now we're going to log
+Time: 303.44s - Text: this object this is really interesting
+Time: 305.199s - Text: on it there is this thing component
+Time: 307.72s - Text: stack the message and the stack so I'm
+Time: 310.88s - Text: actually not sure why this isn't just
+Time: 312.36s - Text: type because you actually know in
+Time: 313.68s - Text: advance what these things are but I
+Time: 315.4s - Text: don't know maybe this is something they
+Time: 316.6s - Text: update in the future right but yeah
+Time: 318.479s - Text: that's how simple it is to provide a
+Time: 320.639s - Text: fallback what's also interesting is that
+Time: 322.96s - Text: if you throw an error back is going to
+Time: 324.639s - Text: be caught by another boundary higher up
+Time: 327.319s - Text: so let's actually look at this example
+Time: 328.84s - Text: so we can say on error we're going to
+Time: 330.84s - Text: get e right so we have error code Let me
+Time: 333.24s - Text: refresh we're going to see error code
+Time: 335.319s - Text: now let's say for example that an error
+Time: 337.08s - Text: froze here for some reason so we can
+Time: 339.28s - Text: just go back here and let's say row e
+Time: 342.4s - Text: and I'm just going to create another
+Time: 345.039s - Text: boundary and here we're going to
+Time: 349.28s - Text: say say error
+Time: 353.56s - Text: C all right and also this is complaining
+Time: 356.96s - Text: so let's just do this
+Time: 360s - Text: all right so basically in this error
+Time: 361.44s - Text: boundary if it froze again is going to
+Time: 363.56s - Text: be called by a boundary higher up so we
+Time: 366s - Text: should see this message error CAU right
+Time: 368.319s - Text: let's go back here I'm going to reload
+Time: 370.56s - Text: and now everything works let's go boom
+Time: 372.24s - Text: and we're going to see the error is
+Time: 373.8s - Text: going to be caught all right there is
+Time: 375.84s - Text: one thing that I want to show you and
+Time: 377.08s - Text: that is how you can use on error and
+Time: 379.24s - Text: reset outside the error boundary so they
+Time: 381.52s - Text: have a wonderful example here in fact
+Time: 383.68s - Text: I'm just going to copy it so let's just
+Time: 385.319s - Text: copy it and let's just paste it
+Time: 388.319s - Text: in let's just say mouse
+Time: 391.28s - Text: coordinates so here we can Define our
+Time: 393.68s - Text: own own error function so we can type
+Time: 395.84s - Text: the error we can just say error in this
+Time: 398s - Text: case and this is going to be our
+Time: 399.479s - Text: function nothing special all right so we
+Time: 401.52s - Text: can set the error outside the error
+Time: 403.16s - Text: boundary and we can have our reset
+Time: 405.24s - Text: function here so we can just update it
+Time: 407.28s - Text: and because event handlers are just
+Time: 408.68s - Text: regular props we can just do this which
+Time: 410.479s - Text: is really beautiful so we can just say
+Time: 412.12s - Text: on error here and now we can just check
+Time: 414.24s - Text: hey if there's an error we can handle it
+Time: 416.12s - Text: outside the error boundary so here we
+Time: 417.919s - Text: have a button with an on click method
+Time: 419.759s - Text: we're going to set the error to null and
+Time: 421.8s - Text: then we're going to reset it so it
+Time: 423.36s - Text: recreates the content all right so now
+Time: 425.919s - Text: if I go to our example refresh for good
+Time: 428.319s - Text: measure now we're going to see
+Time: 429.36s - Text: everything works fine the same as before
+Time: 431.4s - Text: but now if we go boom we're going to see
+Time: 433.639s - Text: oops try again and now let's do that and
+Time: 436.24s - Text: we're going to see everything works the
+Time: 437.639s - Text: same as before that's it that's
+Time: 440.08s - Text: everything you have to know about swell
+Time: 441.919s - Text: error boundaries and as always I'm going
+Time: 444s - Text: to put all of the links in the
+Time: 445.28s - Text: description if you like what You' seen
+Time: 446.96s - Text: don't forget to like And subscribe and
+Time: 448.52s - Text: I'll catch you in the next one one Beast
